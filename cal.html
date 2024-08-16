@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <main>
+        <h1>CALCULATOR</h1>
+        <div id="calculator">
+            <input id="display" readonly>
+            <div class="keys">
+
+                <!-- FIRST ROW -->
+                <button class=box onclick="appendToDisplay('')">DISP</button>
+                <button class=box onclick="appendToDisplay('')">RECHECK</button>
+                <button class=box onclick="appendToDisplay('')">AUTO <br>REVIEW</button>
+                <button class=box onclick="appendToDisplay('')">CORRECT</button>
+                <button class=box onclick="appendToDisplay('')">CHECK <br>BACK</button>
+                <button class=box onclick="appendToDisplay('')">CHECK <br>FORWARD</button>
+
+                <!-- SECOND ROW -->
+                <button class=box onclick="appendToDisplay('')">TAX+</button>
+                <button class=box onclick="appendToDisplay('')">TAX-</button>
+                <button class=box onclick="appendToDisplay('%')">%</button>
+                <button class=box onclick="appendToDisplay('^')">^</button>
+                <button class=box onclick="appendToDisplay('')">MU</button>
+                <button class=box onclick="appendToDisplay('')">GT</button>
+
+                <!-- THIRD ROW -->
+                <button class=box onclick="appendToDisplay('')">PLAY</button>
+                <button class=box onclick="appendToDisplay('7')">7</button>
+                <button class=box onclick="appendToDisplay('8')">8</button>
+                <button class=box onclick="appendToDisplay('9')">9</button>
+                <button class=box onclick="appendToDisplay('*')">*</button>
+                <button class=box onclick="appendToDisplay('/')">/</button>
+
+                <!-- FOURTH ROW -->
+                <button class=box onclick="clearDisplay()('C')">C</button>
+                <button class=box onclick="appendToDisplay('4')">4</button>
+                <button class=box onclick="appendToDisplay('5')">5</button>
+                <button class=box onclick="appendToDisplay('6')">6</button>
+                <button class=box onclick="appendToDisplay('-')">-</button>
+                <button class=box onclick="appendToDisplay('')">MRC</button>
+
+                <!-- FIFTH ROW -->
+                <button class=box onclick="appendToDisplay('')">AC<BR>ON</button>
+                <button class=box onclick="appendToDisplay('1')">1</button>
+                <button class=box onclick="appendToDisplay('2')">2</button>
+                <button class=box onclick="appendToDisplay('3')">3</button>
+                <button class=box onclick="appendToDisplay('+')">+</button>
+                <button class=box onclick="appendToDisplay('')">M-</button>
+
+                <!-- SIXTH ROW -->
+                <button class=box onclick="appendToDisplay('0')">0</button>
+                <button class=box onclick="appendToDisplay('00')">00</button>
+                <button class=box onclick="appendToDisplay('.')">.</button>
+                <button class=box onclick="calculate()">=</button>
+                <button class=box onclick="appendToDisplay('+')">+</button>
+                <button class=box onclick="appendToDisplay('')">M+</button>
+            </div>
+        </div>
+    </main>
+    <script src="cal.js"></script>
+</body>
+
+</html>
